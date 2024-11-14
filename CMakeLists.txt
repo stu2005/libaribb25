@@ -26,8 +26,8 @@ find_package(PCSC REQUIRED)
 
 if(UNIX OR MSYS)
 	find_program(LDCONFIG_EXECUTABLE "ldconfig")
-	set(WITH_PCSC_PACKAGE "libpcsclite" CACHE STRING "pkg-config package name for PC/SC")
-	set(WITH_PCSC_LIBRARY "" CACHE STRING "library name for PC/SC")
+	#set(WITH_PCSC_PACKAGE "libpcsclite" CACHE STRING "pkg-config package name for PC/SC")
+	set(WITH_PCSC_LIBRARY "pcsckai" CACHE STRING "library name for PC/SC")
 endif()
 
 if(WIN32)
