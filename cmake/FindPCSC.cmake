@@ -12,7 +12,7 @@ if(NOT PCSC_FOUND)
 	if(WITH_PCSC_LIBRARY)
 		find_library(PCSC_LIBRARIES NAMES ${WITH_PCSC_LIBRARY})
 	else()
-		find_library(PCSC_LIBRARIES NAMES pcsclite PCSC WinSCard winscard)
+		find_library(PCSC_LIBRARIES NAMES pcsckai PCSC WinSCard winscard)
 	endif()
 
 	if(PCSC_LIBRARIES)
