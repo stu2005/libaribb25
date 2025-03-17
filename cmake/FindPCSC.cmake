@@ -1,6 +1,6 @@
 find_package(PkgConfig)
 if(PKG_CONFIG_FOUND AND WITH_PCSC_PACKAGE AND NOT CMAKE_CROSSCOMPILING)
-	if(WITH_PCSC_PACKAGE STREQUAL "libpcsclite")
+	if(WITH_PCSC_PACKAGE STREQUAL "libpcsckai")
 		pkg_check_modules(PCSC ${WITH_PCSC_PACKAGE})
 	else()
 		pkg_check_modules(PCSC REQUIRED ${WITH_PCSC_PACKAGE})
